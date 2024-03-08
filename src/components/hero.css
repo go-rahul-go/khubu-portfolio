@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Quicksand:wght@400;700&display=swap');
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(23, 2, 61);
+    padding: 10vh 0px;
+
+    overflow: hidden;
+
+}
+
+
+.video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    margin: auto;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    
+}
+.hero-txt-box{
+    width:50%;
+    height:60%;
+    /* border:2px solid white; */
+    background-color: rgba(12, 12, 12, 0.388);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:20px;
+    border-radius: 20px;
+}
+
+#line1{
+    font-size:2.5vw;
+}
+#line2{
+    font-size: 3.3vw;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#para{
+    font-size: 1.6vw;
+    text-transform: capitalize;
+}
+.hero-downloads{
+    width:100%;
+    height:20%;
+   /* border:2px solid white; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:5px;
+ 
+}
+.hero-downloads a{
+    width:30%;
+    height:80%;
+    background-color: rgba(255, 255, 255, 0.512);
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero-downloads a:last-child{
+    background-color: orange;
+}
+@media (max-width:1000px) {
+    .hero {
+        height:100vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10vh 0px;
+        gap: 2px;
+    }
+
+   
+
+    .hero-text {
+        width: 100%;
+        height:90%;
+       
+        /* border:2px solid white; */
+    }
+    .hero-txt-box{
+        width:90%;
+        /* height:65vh; */
+        justify-content: center;
+        margin-top: -10vh;
+      
+    }
+    #line1{
+        font-size:1.6rem;
+    }
+    #line2{
+        font-size:2rem;
+    }
+    #para{
+        font-size:1.2rem;
+    }
+    .hero-downloads a{
+        width:50%;
+        height:40px;
+        font-size:0.9rem;
+    }
+}

@@ -1,0 +1,461 @@
+:root {
+    --Contactdarkbg: #252525;
+    --ContactlightBg: #EDF2EF;
+    --ContactlightBg2: #FBF5F3;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    padding: 12vh 0vw 0vw 0vw;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.contact-dark {
+    background-color: var(--Contactdarkbg);
+    color: ghostwhite;
+}
+
+.contact-light {
+    background-color: var(--ContactlightBg);
+}
+
+.form-box {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid red; */
+    padding: 0px 5px;
+}
+
+.object {
+    width: 50%;
+    height: 100%;
+    /* border:2px solid black; */
+
+}
+
+/* .object-dark{
+    background-color: rgb(65, 65, 65);
+} */
+/* .object-light{
+    background-color: rgb(226, 226, 226);
+} */
+canvas {
+    width: 100%;
+    height: 100%;
+    /* display: grid;
+    place-items: center; */
+    /* background-color: rgb(184, 184, 184); */
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+    /* border:2px solid blue; */
+    /* background-color: #dcdcdc; */
+}
+
+.form-dark {
+    background-color: #32303000;
+}
+
+.form-h3 {
+    font-size: 2.5rem;
+    padding: 0px 10px;
+}
+
+.form form {
+    width: 100%;
+    /* height:100%; */
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 10px;
+}
+
+.form label {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.form input {
+    width: 60%;
+    height: 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    color: rgb(31, 31, 31);
+    padding-left: 3px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-dark input {
+    background-color: white;
+}
+
+.form textarea {
+    width: 60%;
+    height: 150px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: rgb(202, 202, 202);
+    color: rgb(31, 31, 31);
+    padding: 2px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-dark textarea {
+    background-color: white;
+}
+
+.form input[type=text]:focus {
+    outline: 2px solid rgb(132, 0, 255);
+}
+
+.form input[type=email]:focus {
+    outline: 2px solid rgb(132, 0, 255);
+}
+
+.form textarea:focus {
+    outline: 2px solid rgb(132, 0, 255);
+}
+
+.submit {
+    width: 20%;
+    height: 40px;
+    margin: 10px 0px 0px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.poc {
+    width: 100%;
+    height: 40vh;
+    padding: 10px 0px;
+    display: flex;
+    margin-top: 10vh;
+    /* border:2px solid blue; */
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.poc-light {
+    background: linear-gradient(209deg, rgb(8, 0, 255) 0.00%, rgb(227, 43, 227) 100.00%);
+}
+
+.poc-dark {
+    background: linear-gradient(132deg, rgb(8, 0, 255) 0.00%, rgb(227, 43, 227) 100.00%);
+}
+
+.poc-box {
+    /* width:30%; */
+    height: 60%;
+    /* border-right:2px solid rgb(217, 212, 212); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding-right: 10px; */
+}
+
+.poc-box:last-child {
+    border-right: none;
+}
+
+.poc-icon {
+    width: 100%;
+
+    overflow: hidden;
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.poc-detail {
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+#e-mail {
+    font-size: 1.3rem;
+}
+
+#whats {
+    font-size: 2.4rem;
+    color: rgb(3, 210, 3);
+}
+
+#mail {
+    font-size: 2.4rem;
+    color: rgb(241, 68, 0);
+}
+
+#location {
+    font-size: 2.4rem;
+    color: rgb(241, 141, 0);
+}
+
+.success,
+.wait ,.mail-error{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(23, 23, 23, 0.547);
+    position: absolute;
+    top: 10vh;
+    left: 0%;
+    z-index: 5;
+    display: flex;
+   justify-content: space-evenly;
+   align-items:center;
+}
+
+.wait-box {
+    width: 50%;
+    height: 60%;
+    background-color: rgba(13, 13, 13, 0.597);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgb(242, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 20px;
+    
+}
+
+.react-logo {
+    font-size: 5rem;
+    animation: clock 2200ms linear infinite;
+    color:rgb(0, 136, 255);
+}
+
+
+
+@keyframes clock {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.success-box {
+    width: 80%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.467);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+
+}
+
+.heart-logo {
+    color:red;
+    font-size: 5rem;
+    animation: beat 2100ms linear infinite;
+}
+.mail-error-box{
+    width:50%;
+    height: 50%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.467);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color:rgb(254, 2, 2);
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#error-close-btn{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 3rem;
+    color:red;
+}
+@keyframes beat {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.2);
+        color:rgb(205, 0, 0);
+    }
+}
+
+#success-h1 {
+    background: linear-gradient(45deg, red, rgb(195, 0, 255), rgb(0, 106, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.6rem;
+
+}
+
+#touch {
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+
+#success-ok-btn {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(0, 106, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+}
+
+#success-pop-close {
+    font-size: 3rem;
+    color: red;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#success-pop-close:hover,
+#success-ok-btn:hover {
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .form-box {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        /* border:4px solid rgb(255, 0, 242); */
+    }
+
+    .object {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .form {
+        width: 100%;
+        /* height:50vh; */
+        padding-block: 10px;
+    }
+
+    .form input {
+        width: 75%;
+    }
+
+    .form textarea {
+        width: 75%;
+    }
+
+    .poc {
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .poc-box {
+        width: 87%;
+        height: 30%;
+        border-right: none;
+        border-bottom: 2px solid rgb(178, 177, 177);
+    }
+
+    .poc-box:last-child {
+        border-bottom: none;
+    }
+
+    .poc-detail {
+        font-size: 1.4rem;
+    }
+
+    #e-mail {
+        font-size: 1.2rem;
+    }
+    .success,.wait,.mail-error{
+        height:calc(130vh + 70vh);
+        position: absolute;
+        display: block;
+    }
+    .success-box{
+        width:90%;
+        height:30%;
+        position: absolute;
+        top:20%;
+        left:5%;
+    }
+    .wait-box{
+        width: 80%;
+        height: 30%;
+        background-color: rgba(13, 13, 13, 0.597);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: rgb(242, 240, 240);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        position: absolute;
+        top:20%;
+        left:8%;
+    }
+    #success-h1{
+        font-size: 2.1rem;
+    }
+    .mail-error-box{
+        width:80%;
+        height: 30%;
+        position: absolute;
+        top:20%;
+        left:8%;
+        background-color: rgba(0, 0, 0, 0.467);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color:rgb(254, 2, 2);
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

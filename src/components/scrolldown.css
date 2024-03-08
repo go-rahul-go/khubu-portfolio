@@ -1,0 +1,29 @@
+.scroll-down{
+    width:120px;
+    height:40px;
+    position: fixed;
+    bottom:30%;
+    right:20px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color:white;
+   
+    z-index:100;
+    border:2px solid white;
+    border-radius: 20px;
+    transform: rotate(90deg);
+    font-weight:600;
+    display: grid;
+    place-items: center;
+   animation: topDown 2000ms linear 100ms infinite;
+}
+@keyframes topDown{
+    0%{
+        bottom:30%;
+    }
+    25%{
+        bottom:20%;
+    }
+    100%{
+        bottom:30%;
+    }
+}

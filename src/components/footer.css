@@ -1,0 +1,320 @@
+.footer {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+
+}
+.footer-dark{
+    background-color: rgb(15, 15, 15);
+}
+.footer-light{
+    background: linear-gradient(180deg,rgb(254, 249, 254),rgb(217, 153, 251),rgba(184, 54, 253, 0.73));
+}
+.circles {
+    width: 85%;
+    height:100%;
+    /* position: relative; */
+    padding:10vh 10px;
+    margin:auto;
+   
+}
+
+.row {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border:2px solid yellow; */
+    margin-top: 2%;
+}
+
+.circle {
+    width: 2vw;
+    height: 2vw;
+    background-color: white;
+    border-radius: 50%;
+    transform-origin: top center;
+    animation: spin 1.5s linear infinite;
+}
+.circle-dark{
+    background: linear-gradient(132deg,rgb(185, 0, 252),blue);
+}
+.circle-light{
+    background:linear-gradient(65deg,rgb(234, 8, 255),#7400E0);
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0) scale(1.1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(0.2);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+
+.row:nth-child(1) .circle{
+ 
+    animation-delay: 100ms;
+}
+.row:nth-child(2) .circle{
+    animation-delay: 200ms;
+}
+.row:nth-child(3) .circle{
+    animation-delay: 300ms;
+}
+.row:nth-child(4) .circle{
+    animation-delay: 400ms;
+}
+.row:nth-child(5) .circle{
+    animation-delay: 500ms;
+}
+.row:nth-child(6) .circle{
+    animation-delay: 600ms;
+}
+.row:nth-child(7) .circle{
+    animation-delay: 700ms;
+}
+.row:nth-child(8) .circle{
+    animation-delay: 800ms;
+}
+.row:nth-child(9) .circle{
+    animation-delay: 900ms;
+}
+.row:nth-child(10) .circle{
+    animation-delay: 1000ms;
+}
+.row:nth-child(11) .circle{
+    animation-delay: 1100ms;
+}
+.row:nth-child(12) .circle{
+    animation-delay: 1200ms;
+}
+
+.f-div{
+    width:100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom:0px;
+    /* border: 2px solid yellow; */
+}
+/* .f-div-light{
+    background:linear-gradient(180deg,transparent,rgba(133, 0, 249, 0.484),rgb(89, 0, 134));
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    color:white;
+}
+.f-div-dark{
+    background-color: rgba(12, 12, 12, 0.583);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+} */
+.foot-nav{
+    width:65%;
+    height:35%;
+    /* border:2px solid red; */
+    background-color: #7400E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3%;
+    border-radius: 15px;
+}
+.foot-nav-light{
+    background-color: #7400e06e;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+.foot-nav-dark{
+    background-color: rgba(0, 0, 0, 0.458);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+.foot-nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 2.3em;
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+    text-transform: capitalize;
+    
+}
+.foot-nav a:hover{
+    color:yellow;
+    border-bottom: 2px solid yellow;
+}
+.social{
+    width: 100%;
+    height:40%;
+    /* border:2px solid rgb(255, 0, 247); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-inner{
+    width:50%;
+    height:100%;
+   /* border: 2px solid white; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:15px;
+
+}
+.s-icon{
+    width:16%;
+    height:70%;
+    overflow: hidden;
+    /* border:2px solid greenyellow; */
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+.s-icon-light{
+    background-color: rgba(148, 5, 249, 0.388);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.s-icon-dark{
+    background-color: rgba(5, 5, 5, 0.249);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+.s-icon img{
+    width: 80%;
+    height:80%;
+    object-fit: contain;
+}
+.copy{
+    width: 100%;
+    height:15%;
+    /* border:2px solid rgb(0, 242, 255); */
+    display: flex;
+    justify-content: space-between;
+}
+.copy-dark{
+    color:white;
+}
+.foot-h2{
+    width:100%;
+    position: absolute;
+    top:2%;
+    font-size: 3em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.foot-h2-light{
+    background: linear-gradient(45deg,rgb(174, 0, 255),rgb(139, 0, 225));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.foot-h2-dark{
+    background: linear-gradient(132deg,rgb(255, 162, 0),rgb(212, 0, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copy-left{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    /* border:1px solid yellow; */
+    gap:2px;
+}
+.copy-logo{
+    width:30px;
+    height:30px;
+    display: grid;
+    place-items: center;
+}
+#year{
+    margin-left:10px;
+}
+#rights{
+    width:30%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: capitalize;
+    padding-right: 20px;
+}
+.owner{
+    font-weight:900;
+    
+}
+.owner-dark{
+    color:orangered;
+}
+.owner-light{
+    color:rgb(229, 229, 249);
+}
+@media (max-width:1000px)
+{
+    .footer{
+        height:55vh;
+        /* border: 2px solid yellow; */
+    }
+    .circles{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5vh 10px;
+    }
+    .row{
+        justify-content: space-around;
+    }
+    .circle{
+        width:3vw;
+        height:3vw;
+    }
+    .greet{
+        width:100%;
+        top:0%;
+        font-size: 15vw;
+       text-align: center;
+    }
+    .foot-nav{
+        width:90%;
+    }
+    .foot-nav a{
+        
+        font-size: 4.4vw;
+        
+    }
+    .social-inner{
+        width:100%;
+    }
+   .foot-h2{
+    font-size: 2em;
+   }
+   
+   .copy-left{
+    width:fit-content;
+    
+   }
+   #owner{
+    font-size: 3.8vw;
+   }
+   #year{
+    font-size: 2.9vw;
+   }
+   #rights{
+        width:40%;
+        padding-right: 5px;
+        font-size: 3.3vw;
+   }
+}
