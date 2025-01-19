@@ -199,78 +199,7 @@ const Footer = () => {
                     <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
 
                 </div>
-                {/* <div className='row'>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-
-                </div>
-                <div className='row'>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-                    <div className={theme === "dark" ? "circle circle-dark" : "circle circle-light"}></div>
-
-                </div>
-                <div className='row'>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    
-                </div>
-                <div className='row'>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    <div className={theme==="dark"?"circle circle-dark":"circle circle-light"}></div>
-                    
-                </div> */}
+                
             </div>
             <motion.h2 className={theme === "dark" ? 'foot-h2 foot-h2-dark' : 'foot-h2 foot-h2-light'} ref={h2Ref} variants={h2Var} initial="start" animate={vis ? "end" : "start"} transition={{ duration: 0.5, delay: 0.4, type: "spring", stiffness: 50 }}>thanks for visiting</motion.h2>
             <motion.div className={theme === "dark" ? "f-div f-div-dark" : "f-div f-div-light"}>

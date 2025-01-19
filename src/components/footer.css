@@ -31,8 +31,8 @@
 }
 
 .circle {
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
     background-color: white;
     border-radius: 50%;
     transform-origin: top center;
