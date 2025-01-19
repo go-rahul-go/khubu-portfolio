@@ -46,9 +46,11 @@ const Certs = () => {
     const showCert = (option) => {
         changeCert(option)
     }
-
-    useEffect(() => {
+    useEffect(()=>{
         window.scrollTo(0,0)
+    })
+    useEffect(() => {
+       
         const observer1 = new IntersectionObserver(entries => {
 
             let e1 = entries[0]
